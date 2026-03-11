@@ -1,0 +1,40 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="620" rx="24" fill="#111827"/>
+  <text x="60" y="70" fill="#F9FAFB" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">Arthas 常用命令速查图</text>
+  <text x="60" y="108" fill="#9CA3AF" font-size="20" font-family="Arial, Helvetica, sans-serif">按“看全局 → 找热点 → 定位方法 → 观察参数 → 统计/回放”来记忆更好</text>
+
+  <rect x="60" y="150" width="240" height="180" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="88" y="195" fill="#60A5FA" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">看全局</text>
+  <text x="88" y="235" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">dashboard</text>
+  <text x="88" y="270" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">jvm</text>
+  <text x="88" y="305" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">sysprop</text>
+
+  <rect x="330" y="150" width="240" height="180" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="358" y="195" fill="#A78BFA" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">找热点</text>
+  <text x="358" y="235" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">thread -n 5</text>
+  <text x="358" y="270" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">thread &lt;id&gt;</text>
+  <text x="358" y="305" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">stack</text>
+
+  <rect x="600" y="150" width="260" height="180" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="628" y="195" fill="#34D399" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">定位方法</text>
+  <text x="628" y="235" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">sc -d 类名</text>
+  <text x="628" y="270" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">sm 类名 *</text>
+  <text x="628" y="305" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">trace 类名 方法名</text>
+
+  <rect x="890" y="150" width="250" height="180" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="918" y="195" fill="#F59E0B" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">观察入参与返回</text>
+  <text x="918" y="235" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">watch 类名 方法名</text>
+  <text x="918" y="270" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">-x 2</text>
+  <text x="918" y="305" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">{params,returnObj}</text>
+
+  <rect x="180" y="380" width="320" height="170" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="208" y="425" fill="#F472B6" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">做统计</text>
+  <text x="208" y="465" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">monitor -c 5 类名 方法名</text>
+  <text x="208" y="500" fill="#9CA3AF" font-size="18" font-family="Arial, Helvetica, sans-serif">看调用次数、成功率、平均 RT</text>
+
+  <rect x="560" y="380" width="460" height="170" rx="18" fill="#1F2937" stroke="#374151"/>
+  <text x="588" y="425" fill="#22D3EE" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">录制与回放</text>
+  <text x="588" y="465" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">tt -t 类名 方法名</text>
+  <text x="588" y="500" fill="#E5E7EB" font-size="21" font-family="Courier New, monospace">tt -l    /    tt -i 1000 -p</text>
+  <text x="588" y="535" fill="#9CA3AF" font-size="18" font-family="Arial, Helvetica, sans-serif">适合追偶发问题和回放入参</text>
+</svg>

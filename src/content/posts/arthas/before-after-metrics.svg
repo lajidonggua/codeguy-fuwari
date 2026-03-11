@@ -1,0 +1,24 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="500" rx="24" fill="#0B1220"/>
+  <text x="60" y="70" fill="#F8FAFC" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">优化前后效果对比</text>
+  <text x="60" y="108" fill="#94A3B8" font-size="20" font-family="Arial, Helvetica, sans-serif">把抽象的调优结果变成直观图示，更适合文章阅读和面试表达</text>
+
+  <text x="90" y="180" fill="#CBD5E1" font-size="24" font-family="Arial, Helvetica, sans-serif">P95 延迟</text>
+  <rect x="90" y="205" width="520" height="42" rx="12" fill="#334155"/>
+  <rect x="90" y="205" width="520" height="42" rx="12" fill="#EF4444"/>
+  <rect x="90" y="265" width="118" height="42" rx="12" fill="#22C55E"/>
+  <text x="630" y="233" fill="#FCA5A5" font-size="22" font-family="Arial, Helvetica, sans-serif">优化前：1.8s</text>
+  <text x="230" y="293" fill="#BBF7D0" font-size="22" font-family="Arial, Helvetica, sans-serif">优化后：410ms</text>
+
+  <text x="90" y="370" fill="#CBD5E1" font-size="24" font-family="Arial, Helvetica, sans-serif">超时率</text>
+  <rect x="90" y="395" width="430" height="42" rx="12" fill="#334155"/>
+  <rect x="90" y="395" width="430" height="42" rx="12" fill="#F97316"/>
+  <rect x="90" y="455" width="55" height="18" rx="9" fill="#22C55E"/>
+  <text x="540" y="423" fill="#FDBA74" font-size="22" font-family="Arial, Helvetica, sans-serif">优化前：4.7%</text>
+  <text x="165" y="468" fill="#BBF7D0" font-size="22" font-family="Arial, Helvetica, sans-serif">优化后：0.6%</text>
+
+  <circle cx="930" cy="250" r="120" fill="#132238" stroke="#1E293B" stroke-width="8"/>
+  <text x="860" y="235" fill="#F8FAFC" font-size="32" font-family="Arial, Helvetica, sans-serif" font-weight="700">收益</text>
+  <text x="838" y="275" fill="#22C55E" font-size="38" font-family="Arial, Helvetica, sans-serif" font-weight="700">P95 ↓ 77%</text>
+  <text x="818" y="318" fill="#93C5FD" font-size="24" font-family="Arial, Helvetica, sans-serif">转化率提升约 6.3%</text>
+</svg>

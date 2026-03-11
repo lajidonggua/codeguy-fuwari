@@ -1,0 +1,32 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" rx="24" fill="#0F172A"/>
+  <text x="60" y="70" fill="#F8FAFC" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">Arthas 性能排查流程图</text>
+  <text x="60" y="108" fill="#94A3B8" font-size="20" font-family="Arial, Helvetica, sans-serif">从监控发现问题，到用 Arthas 锁定慢方法，再到验证优化结果</text>
+
+  <rect x="60" y="160" width="220" height="150" rx="18" fill="#1D4ED8"/>
+  <text x="90" y="210" fill="#EFF6FF" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">1. 监控发现异常</text>
+  <text x="90" y="248" fill="#DBEAFE" font-size="20" font-family="Arial, Helvetica, sans-serif">看 P95 / P99 / 错误率</text>
+  <text x="90" y="278" fill="#DBEAFE" font-size="20" font-family="Arial, Helvetica, sans-serif">确认是否持续抖动</text>
+
+  <rect x="340" y="160" width="220" height="150" rx="18" fill="#7C3AED"/>
+  <text x="370" y="210" fill="#F5F3FF" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">2. Arthas 诊断</text>
+  <text x="370" y="248" fill="#EDE9FE" font-size="20" font-family="Arial, Helvetica, sans-serif">dashboard / thread</text>
+  <text x="370" y="278" fill="#EDE9FE" font-size="20" font-family="Arial, Helvetica, sans-serif">trace / watch / monitor</text>
+
+  <rect x="620" y="160" width="220" height="150" rx="18" fill="#0F766E"/>
+  <text x="650" y="210" fill="#ECFDF5" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">3. 定位根因</text>
+  <text x="650" y="248" fill="#CCFBF1" font-size="20" font-family="Arial, Helvetica, sans-serif">慢 SQL / RPC 重试</text>
+  <text x="650" y="278" fill="#CCFBF1" font-size="20" font-family="Arial, Helvetica, sans-serif">线程热点 / 参数异常</text>
+
+  <rect x="900" y="160" width="240" height="150" rx="18" fill="#B45309"/>
+  <text x="930" y="210" fill="#FFF7ED" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">4. 验证收益</text>
+  <text x="930" y="248" fill="#FFEDD5" font-size="20" font-family="Arial, Helvetica, sans-serif">回看 RT / 超时率</text>
+  <text x="930" y="278" fill="#FFEDD5" font-size="20" font-family="Arial, Helvetica, sans-serif">确认是否真正收敛</text>
+
+  <path d="M280 235H330" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M300 220L330 235L300 250" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 235H610" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M580 220L610 235L580 250" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M840 235H890" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M860 220L890 235L860 250" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

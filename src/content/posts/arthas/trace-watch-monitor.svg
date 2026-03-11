@@ -1,0 +1,49 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="60" y1="150" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="450" y1="150" x2="750" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="840" y1="150" x2="1140" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" rx="24" fill="url(#bg)"/>
+  <text x="60" y="72" fill="#F8FAFC" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">Arthas 三个高频命令怎么区分</text>
+  <text x="60" y="108" fill="#94A3B8" font-size="20" font-family="Arial, Helvetica, sans-serif">记忆口诀：trace 看调用路径，watch 看参数结果，monitor 看统计趋势</text>
+
+  <rect x="60" y="150" width="300" height="280" rx="22" fill="url(#g1)"/>
+  <text x="95" y="205" fill="#EFF6FF" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">trace</text>
+  <text x="95" y="250" fill="#DBEAFE" font-size="22" font-family="Arial, Helvetica, sans-serif">看什么</text>
+  <text x="95" y="282" fill="#F8FAFC" font-size="24" font-family="Arial, Helvetica, sans-serif">方法调用链路耗时</text>
+  <text x="95" y="330" fill="#DBEAFE" font-size="22" font-family="Arial, Helvetica, sans-serif">适合场景</text>
+  <text x="95" y="362" fill="#F8FAFC" font-size="22" font-family="Arial, Helvetica, sans-serif">定位“到底慢在哪一层”</text>
+  <text x="95" y="402" fill="#E0E7FF" font-size="20" font-family="Courier New, monospace">trace com.demo.Service query '#cost > 100'</text>
+
+  <rect x="450" y="150" width="300" height="280" rx="22" fill="url(#g2)"/>
+  <text x="485" y="205" fill="#F5F3FF" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">watch</text>
+  <text x="485" y="250" fill="#EDE9FE" font-size="22" font-family="Arial, Helvetica, sans-serif">看什么</text>
+  <text x="485" y="282" fill="#F8FAFC" font-size="24" font-family="Arial, Helvetica, sans-serif">入参、返回值、异常</text>
+  <text x="485" y="330" fill="#EDE9FE" font-size="22" font-family="Arial, Helvetica, sans-serif">适合场景</text>
+  <text x="485" y="362" fill="#F8FAFC" font-size="22" font-family="Arial, Helvetica, sans-serif">判断参数是否异常、是否重试放大</text>
+  <text x="485" y="402" fill="#F3E8FF" font-size="19" font-family="Courier New, monospace">watch com.demo.Service query '{params,returnObj,cost}' -x 2</text>
+
+  <rect x="840" y="150" width="300" height="280" rx="22" fill="url(#g3)"/>
+  <text x="875" y="205" fill="#ECFDF5" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">monitor</text>
+  <text x="875" y="250" fill="#D1FAE5" font-size="22" font-family="Arial, Helvetica, sans-serif">看什么</text>
+  <text x="875" y="282" fill="#F8FAFC" font-size="24" font-family="Arial, Helvetica, sans-serif">调用次数、成功率、平均 RT</text>
+  <text x="875" y="330" fill="#D1FAE5" font-size="22" font-family="Arial, Helvetica, sans-serif">适合场景</text>
+  <text x="875" y="362" fill="#F8FAFC" font-size="22" font-family="Arial, Helvetica, sans-serif">观察一段时间内趋势是否收敛</text>
+  <text x="875" y="402" fill="#D1FAE5" font-size="18" font-family="Courier New, monospace">monitor -c 5 com.demo.Service query</text>
+
+  <text x="60" y="476" fill="#94A3B8" font-size="18" font-family="Arial, Helvetica, sans-serif">面试表达建议：先说你用 trace 找慢层级，再用 watch 验证参数/返回，最后用 monitor 看优化后趋势。</text>
+</svg>
